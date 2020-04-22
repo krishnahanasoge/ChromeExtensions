@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "WordReplace",
+    "description": "This extension will replace certain words from your webpage",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
